@@ -2,7 +2,7 @@
 
 You know, a Christmas tree on Bash :)
 
-![](https://i.imgur.com/k6SS8O4.png)
+![](https://i.imgur.com/x2ENBsL.png)
 
 # Usage
 
