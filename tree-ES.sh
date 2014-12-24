@@ -36,7 +36,7 @@ tput cup $((lin + 1)) $((c - 9)); echo Y mucho CODIGO en 2015
 let c++
 k=1
 
-# Lucesitas y bolitas
+# Lucecitas y bolitas
 while true; do
     for ((i=1; i<=35; i++)) {
         # Apagar luces
