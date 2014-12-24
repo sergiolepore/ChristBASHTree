@@ -32,7 +32,7 @@ for ((i=1; i<=2; i++))
 
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo MERRY CHRISTMAS
-tput cup $((lin + 1)) $((c - 10)); echo And lots of CODE on 2015
+tput cup $((lin + 1)) $((c - 10)); echo And lots of CODE in 2015
 let c++
 k=1
 
