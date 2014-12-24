@@ -38,7 +38,7 @@ __Enjoy!__
 
 ## Will it run under _whatever-OS_?
 
-You just need Bash. That's all.
+Only Linux and Unix flavors.
 
 ## What OS are you using?
 
