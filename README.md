@@ -2,6 +2,8 @@
 
 You know, a Christmas tree on Bash :)
 
+[](https://i.imgur.com/k6SS8O4.png)
+
 # Usage
 
 Via cURL:
@@ -31,3 +33,25 @@ git clone https://github.com/sergiolepore/ChristBASHTree.git && cd ./ChristBASHT
 ```
 
 __Enjoy!__
+
+# FAQ
+
+## Will it run under _whatever-OS_?
+
+You just need Bash. That's all.
+
+## What OS are you using?
+
+Ubuntu 14.04.
+
+## WTH is that Window Theme?
+
+[Yosembiance Theme (GTK3)](http://www.sundman.ca/themes/yosembiance/).
+
+## What about your terminal emulator?
+
+It's the classic Gnome Terminal, running [Byobu](http://byobu.co/).
+
+## And your color palette?
+
+[Base 16 Ocean Dark](https://github.com/chriskempson/base16-gnome-terminal).
