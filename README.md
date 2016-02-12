@@ -1,8 +1,8 @@
 # ChristBASHTree
 
-A Christmas tree on Bash created initially by Sergio Lepore,  updated by Raydelto Hernandez for keeping track automatically of subsequents years.
+You know, a Christmas tree on Bash :)
 
-![](http://www.raydelto.org/ray_christ.png)
+![Screenshot](./screenshot.png?raw=true)
 
 # Usage
 
@@ -13,7 +13,7 @@ Via cURL:
 curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh | bash
 
 # Spanish version
-curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-ES.sh | bash 
+curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-ES.sh | bash
 ```
 
 Via Wget:
@@ -42,16 +42,16 @@ Only Linux and Unix flavors.
 
 ## What OS are you using?
 
-Ubuntu 14.04.
-
-## WTH is that Window Theme?
-
-[Yosembiance Theme (GTK3)](http://www.sundman.ca/themes/yosembiance/).
+OSX 10.11.3 "El Capitan"
 
 ## What about your terminal emulator?
 
-It's the classic Gnome Terminal, running [Byobu](http://byobu.co/).
+[iTerm2](https://iterm2.com/)
 
 ## And your color palette?
 
-[Base 16 Ocean Dark](https://github.com/chriskempson/base16-gnome-terminal).
+[Dracula](https://zenorocha.github.io/dracula-theme/iterm/)
+
+## Contributors
+
+[Here](https://github.com/sergiolepore/ChristBASHTree/graphs/contributors)
