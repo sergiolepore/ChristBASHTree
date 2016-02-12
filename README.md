@@ -1,8 +1,8 @@
 # ChristBASHTree
 
-You know, a Christmas tree on Bash :)
+A Christmas tree on Bash created initially by Sergio Lepore,  updated by Raydelto Hernandez for keeping track automatically of subsequents years.
 
-![](https://i.imgur.com/x2ENBsL.png)
+![](http://www.raydelto.org/ray_christ.png)
 
 # Usage
 

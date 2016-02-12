@@ -29,10 +29,12 @@ for ((i=1; i<=2; i++))
     tput cup $((lin++)) $c
     echo 'mWm'
 }
-
+ano_nuevo=$(date +'%Y') 
+let ano_nuevo++
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo FELICES FIESTAS
-tput cup $((lin + 1)) $((c - 9)); echo Y mucho CODIGO en 2015
+
+tput cup $((lin + 1)) $((c - 9)); echo Y mucho CODIGO en $ano_nuevo 
 let c++
 k=1
 
