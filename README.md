@@ -36,21 +36,25 @@ __Enjoy!__
 
 # FAQ
 
+## License?
+
+[Do what you want with it](./LICENSE) license.
+
 ## Will it run under _whatever-OS_?
 
-Only Linux and Unix flavors.
+Only GNU/Linux and Unix flavors.
 
 ## What OS are you using?
 
-OSX 10.11.3 "El Capitan"
+Ubuntu 17.10.
 
 ## What about your terminal emulator?
 
-[iTerm2](https://iterm2.com/)
+[Tilix](https://gnunn1.github.io/tilix-web/)
 
 ## And your color palette?
 
-[Dracula](https://zenorocha.github.io/dracula-theme/iterm/)
+Custom, based on Atom's "One Dark" theme.
 
 ## Contributors
 

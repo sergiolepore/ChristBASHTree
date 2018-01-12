@@ -9,7 +9,7 @@ est=$((c-2))
 color=0
 tput setaf 2; tput bold
 
-# Arbolito
+# Tree
 for ((i=1; i<20; i+=2))
 {
     tput cup $lin $col
@@ -23,7 +23,7 @@ for ((i=1; i<20; i+=2))
 
 tput sgr0; tput setaf 3
 
-# Tronco
+# Trunk
 for ((i=1; i<=2; i++))
 {
     tput cup $((lin++)) $c
@@ -37,27 +37,26 @@ tput cup $((lin + 1)) $((c - 10)); echo And lots of CODE in $new_year
 let c++
 k=1
 
-# Lucecitas y bolitas
+# Lights and decorations
 while true; do
     for ((i=1; i<=35; i++)) {
-        # Apagar luces
+        # Turn off the lights
         [ $k -gt 1 ] && {
             tput setaf 2; tput bold
-            tput cup ${linea[$[k-1]$i]} ${columna[$[k-1]$i]}; echo \*
-            unset linea[$[k-1]$i]; unset columna[$[k-1]$i]  # Limpiar el array
+            tput cup ${line[$[k-1]$i]} ${column[$[k-1]$i]}; echo \*
+            unset line[$[k-1]$i]; unset column[$[k-1]$i]  # Array cleanup
         }
 
         li=$((RANDOM % 9 + 3))
-        inicio=$((c-li+2))
-        fin=$((c+li+2))
-        co=$((RANDOM % (li-2) * 2 + 1 + inicio))
-        tput setaf $color; tput bold   # cambiar colorcitos
+        start=$((c-li+2))
+        co=$((RANDOM % (li-2) * 2 + 1 + start))
+        tput setaf $color; tput bold   # Switch colors
         tput cup $li $co
         echo o
-        linea[$k$i]=$li
-        columna[$k$i]=$co
+        line[$k$i]=$li
+        column[$k$i]=$co
         color=$(((color+1)%8))
-        # Texto flashero
+        # Flashing text
         sh=1
         for l in C O D E
         do
