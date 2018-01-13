@@ -26,6 +26,13 @@ wget -qO- https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/t
 wget -qO- https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-ES.sh | bash
 ```
 
+Docker:
+
+```
+docker pull sergiolepore/christbashtree:latest
+docker run -it sergiolepore/christbashtree:latest
+```
+
 Git clone and execute:
 
 ```
