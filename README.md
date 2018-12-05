@@ -30,7 +30,12 @@ Docker:
 
 ```
 docker pull sergiolepore/christbashtree:latest
+
+# English Version
 docker run -it sergiolepore/christbashtree:latest
+
+# Spanish Version
+docker run -it -e BASH_TREE_LANG=ES sergiolepore/christbashtree:latest
 ```
 
 Git clone and execute:
