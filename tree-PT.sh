@@ -34,8 +34,6 @@ let new_year++
 tput setaf 1; tput bold
 tput cup $lin $((c - 4)); echo FELIZ NATAL
 tput cup $((lin + 1)) $((c - 9)); echo E muito CODIGO em $new_year
-tput cup $((lin + 3)) $((c - 1)); echo e2a 
-tput cup $((lin + 5)) $((c - 18)); echo https://github.com/aceiro/ChristBASHTree
 let c++
 k=1
 
