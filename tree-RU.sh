@@ -34,8 +34,7 @@ let new_year++
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo "С НОВЫМ ГОДОМ!"
 tput cup $((lin + 1)) $((c - 10)); echo "И хорошего КОДА в $new_year"
-# Next string for English version.
-#let c++
+let c++
 k=1
 
 # Lights and decorations
@@ -59,6 +58,7 @@ while true; do
         color=$(((color+1)%8))
         # Flashing text
         sh=1
+        let c--
         for l in К О Д А
         do
             tput cup $((lin+1)) $((c+sh))
@@ -66,6 +66,7 @@ while true; do
             let sh++
             sleep 0.01
         done
+        let c++
     }
     k=$((k % 2 + 1))
 done
