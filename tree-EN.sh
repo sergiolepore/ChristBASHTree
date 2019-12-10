@@ -9,6 +9,15 @@ est=$((c-2))
 color=0
 tput setaf 2; tput bold
 
+# Song
+if command -v ffplay &>/dev/null ; then
+    {
+        song=https://web.archive.org/web/20191210052304/http://0x0.st/zUun.mp3
+        wget -qP /tmp "$song"
+        ffplay -autoexit -nodisp -loglevel quiet "/tmp/$(basename "$song")"
+    } &
+fi
+
 # Tree
 for ((i=1; i<20; i+=2))
 {
