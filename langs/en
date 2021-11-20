@@ -1,0 +1,5 @@
+#!/bin/bash
+
+MERRY_CHRISTMAS='MERRY CHRISTMAS'
+AND_LOTS_OF_CODE_IN_NEW_YEAR="And lots of CODE in $(($(date +'%Y')+1))"
+CODE='CODE'

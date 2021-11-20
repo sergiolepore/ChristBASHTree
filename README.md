@@ -2,44 +2,26 @@
 
 You know, a Christmas tree on Bash :)
 
-![Screenshot](./screenshot.png?raw=true)
+![Video](./assets/output.gif?raw=true)
 
 # Usage
 
-Via cURL:
+## Git clone
 
-```
-# English version
-curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh | bash
-
-# Spanish version
-curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-ES.sh | bash
+```sh
+git clone https://github.com/sergiolepore/ChristBASHTree.git
+cd ./ChristBASHTree
+bash tree.sh
 ```
 
-Via Wget:
+## Docker
 
-```
-# English version
-wget -qO- https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-EN.sh | bash
-
-# Spanish version
-wget -qO- https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/master/tree-ES.sh | bash
-```
-
-Docker:
-
-```
+```sh
 docker pull sergiolepore/christbashtree:latest
 docker run -it sergiolepore/christbashtree:latest
 ```
 
-Git clone and execute:
-
-```
-git clone https://github.com/sergiolepore/ChristBASHTree.git && cd ./ChristBASHTree && bash tree-EN.sh
-```
-
-__Enjoy!__
+**Enjoy!**
 
 # FAQ
 
