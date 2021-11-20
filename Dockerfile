@@ -1,5 +1,7 @@
 FROM alpine:latest
-COPY tree-EN.sh /tree-EN.sh
-RUN apk add --update ncurses bash
+RUN mkdir /langs
+COPY langs /langs
+COPY tree.sh /tree.sh
+RUN apk add --update ncurses grep bash
 ENV TERM=xterm-256color
-CMD ["bash","/tree-EN.sh"]
+CMD ["bash","/tree.sh"]
