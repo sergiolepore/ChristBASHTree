@@ -1,4 +1,27 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+detect_lang="$(echo "${LANG}" | cut -f1 -d.)"
+case "${detect_lang}" in
+    es_*)
+      xmas_msg='FELICES FIESTAS'
+      ny_msg='Y mucho CODIGO en'
+      code_word=(C O D I G O)
+      code_offset=-3
+      ;;
+    *)
+      xmas_msg='MERRY CHRISTMAS'
+      ny_msg='And lots of CODE in'
+      code_word=(C O D E)
+      code_offset=0
+      ;;
+esac
+new_year=$(date +'%Y')
+let new_year++
+ny_msg="${ny_msg} ${new_year}"
+
+xmas_msg_offset=$((${#xmas_msg} / 2 - 1))
+ny_msg_offset=$((${#ny_msg} / 2 - 2))
+
 trap "tput reset; tput cnorm; exit" 2
 clear
 tput civis
@@ -29,11 +52,9 @@ for ((i=1; i<=2; i++))
     tput cup $((lin++)) $c
     echo 'mWm'
 }
-new_year=$(date +'%Y')
-let new_year++
 tput setaf 1; tput bold
-tput cup $lin $((c - 6)); echo FELICES FIESTAS
-tput cup $((lin + 1)) $((c - 9)); echo Y mucho CODIGO en $new_year
+tput cup $lin $((c - xmas_msg_offset)); echo "${xmas_msg}"
+tput cup $((lin + 1)) $((c - ny_msg_offset)); echo "${ny_msg}"
 let c++
 k=1
 
@@ -58,9 +79,9 @@ while true; do
         color=$(((color+1)%8))
         # Flashing text
         sh=1
-        for l in C O D I G O
+        for l in ${code_word[*]}
         do
-            tput cup $((lin+1)) $((c-3+sh))
+            tput cup $((lin+1)) $((c+code_offset+sh))
             echo $l
             let sh++
             sleep 0.01
